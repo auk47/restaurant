@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+/*Google fonts*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.adjust-line-height{
+    line-height: 1em;
+  }
+
+.adjust-line-height2{
+    line-height: 3em;
+  }
+.adjust-line-height3{
+    line-height: 2em;
+}
+.adjust-line-height4{
+    line-height: 4em;
+}
+
+
+:root{
+    --orange: #c66a00;
+    --brown: #3e130d;
+    --red: #781500;
+    --beige: #d4c6b0;
+    --brownbeige: #b38a69;
+    --darkbeige: #8b6c5e;
+
+}
+
+#check, .menu{
+    display: none;
+}
+/* Navbar + primary heading*/ 
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    font-family: "Epilogue", sans-serif;
+    font-size: 17px;
+    color: #3e130d;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 95%;
+}
+.logo{
+   display: flex;
+   align-items: center;
+   text-align: center; 
+   font-family: "Sansita", sans-serif;
+   color: #781500;
+   font-size: 20px;
+   font-weight: 700;
+   text-transform: uppercase;
+   background-color: var(--beige);
+   width: 78px;
+   border: 2px solid var(--brown);
+   border-radius: 3px;
+   padding: 10px;
+   margin: 2rem;
+}
+.nav-links{
+    display: flex;
+    padding: 0;
+}
+.nav-links a{
+    text-decoration: none;
+    margin-right: 1rem;
+    padding-right: 3rem;
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: "Epilogue", sans-serif;
+    text-shadow: 2px 2px 4px #000000;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+}
+a:hover{
+    color: var(--brownbeige);
+}
+.nav-links .active{
+    color: #e9d3c0;
+}
+.nav-links a::after{
+    content: "";
+    display: block;
+    height: 2px;
+    background: var(--brownbeige);
+    width: 0%; 
+    transition: all ease-in-out 300ms;  
+}
+.nav-links a:hover::after{
+    width: 100%
+}
+/*Hero section*/
+.hero{
+    background-color: var(--beige);
+    padding-right: 10px;
+    padding-left: 30px;
+    position: relative;
+    overflow: hidden;
+    color: #3e130d;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.hero-bg img{
+    height: 35rem;
+    transform: rotate(20deg);
+    bottom: 800px;
+    right: 0rem;
+    top: 100px;
+    left: 800px;
+    z-index: 1;
+    position: absolute;
+}
+.hero-bg2{
+    background: var(--darkbeige);
+    width: 70rem;
+    height: 60rem;
+    position: absolute;
+    border-radius: 35rem;
+    transform: rotate(-45deg);
+    right: -20.3rem;
+    top: -10rem;
+    opacity: 90%;
+}
+.hero-bg2 img{
+    transform: rotate(10);
+    height: 65rem;
+    margin-right: 0rem;
+    margin-left: -2.5rem;
+    margin-top: -2.5rem;
+    opacity: 80%;
+}
+.hero .intro{
+    margin-bottom: 7rem;
+    z-index: 3;
+    position: absolute;
+}
+.hero .intro h1{
+    font-size: 65px;
+    font-family: "Sansita", sans-serif;
+}
+.hero .intro h2{
+    margin: 1rem 0;
+    font-size: 65px;
+    color: #c66a00;
+    font-family: "Sansita", sans-serif;
+}
+.hero .intro h3{
+    margin: 1rem 0;
+    font-size: 65px;
+    font-family: "Sansita", sans-serif;
+}
+.hero .intro h4{
+    margin: 1rem 0;
+    font-size: 65px;
+    color: #c66a00;
+}
+.hero .intro h5{
+    margin: 1rem 0;
+    font-size: 40px;
+    opacity: 80%;
+}
+.hero .intro button{
+    background-color: #c66a00;
+    color: var(--beige);
+    border: none;
+    cursor: pointer;
+    padding: 0.7rem 1rem;
+    border-radius: 3px;
+    box-shadow: 5px 5px rgba(105, 105, 105, 0.75);
+    z-index: 5;
+}
+.scroll{
+    position: absolute;
+    bottom: 2rem;
+    z-index: 6;
+}
+.scroll a{
+    color: #3e130d;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-family: "Epilogue", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.scroll a:hover{
+    color:#3e130d
+}
+/*Brands*/
+.brands{
+    min-height: 100vh;
+    padding-right: 7rem;
+    padding-left: 7rem;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--beige);
+}
+/*menu*/
+.heading{
+    text-align: center;
+    font-family: "Shrikhand", sans-serif;
+    font-size: 50px;
+    color: #3e130d;
+}
+.heading h1{
+    text-align: center;
+    font-family: "Sansita", sans-serif;
+    font-size: 35px;
+    color: #c66a00;
+    opacity: 80%;
+}
+.heading h6{
+    text-align: center;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 10px;
+    color: #3e130d;
+}
+.menu-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-gap: 1.5rem;
+    align-content: center;
+    justify-content: center;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 6rem;
+    padding-top: -6rem;
+}
+.box{
+    float: left;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box h2{
+    align-items: center;
+    font-family: "Sansita", sans-serif;
+    font-size: 25px;
+    line-height: 1.5;
+}
+.box h3{
+    text-align: center;
+    font-family: "Epilogue", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.box span{
+    text-align: center;
+    font-family: "Epilogue", sans-serif;
+    font-size: 15px;
+    color: #781500;
+    line-height: 1.5;
+}
+.box h5{
+    text-align: left;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 15px;
+    color: #000000;
+    line-height: 1.5;
+    font-weight: bold;
+}
+/*Footer*/
+footer{
+    background: #8b6c5e;
+    color: var(--beige);
+    padding: 3rem 0;
+    text-align: center;
+    align-items: center;
+}
+hr{ 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    opacity: 0%;
+} 
+.footercontent h1{
+    font-family: "Shrikhand", sans-serif;
+    color: var(--beige);
+}
+.footercontent h2{
+    font-family: "Shrikhand", sans-serif;
+    color: var(--beige);
+}
+.footercontent h3{
+    font-family: "Epilogue", sans-serif;
+    font-weight: bold;
+    color: var(--beige);
+}
